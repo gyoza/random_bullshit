@@ -43,8 +43,6 @@ music_categories={
   },
 }
 
-#print("%scustomer_name = cakemarketing" %(green), file=stream)
-
 def target_genre_input(sortname):
     print "%s[%sb%s]%slaxploitation, %s[%sc%s]%shill, %s[%sd%s]%substep, %s[%sf%s]%slac, %s[%sh%s]%siphop, %s[%sj%s]%sungle, %s[%so%s]%sst, %s[%ss%s]%singles, %s[%st%s]%sechno%s" % (cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta, reset )
     print "%s[%smi%s]%ssc, %s[%sdu%s]%spes, %s[%sco%s]%smedy, %s[%sro%s]%sck, %s[%sul%s]%strachill, %s[%swo%s]%srld, %s[%sva%s]%s, %s[%sme%s]%stal, %s[%sma%s]%sshups %s[%scr%s]%sap%s" % (cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,cyan, highmagenta, cyan, highmagenta,reset)
@@ -97,25 +95,19 @@ for musicdir in dirsDepth1:
         quit(0)    
     if target_genre == "h":
         if not re.match(r"[a-zA-Z]", album_letter):
-        #print "non letter"
             album_letter = str(raw_input('letter: '))
             source_dir = musicdir
             target_dir = music_root+"/hiphop/"+album_letter
-            #print target_dir
             print "%s moving %s%s %sto %s%s" % (red, yellow, source_dir, red, yellow, target_dir)
-            #shutil.move(source_dir, target_dir)
             move_filez(source_dir, target_dir)
         else:
             source_dir = musicdir
             target_dir = music_root+"/hiphop/"+album_letter
-            #print target_dir
             print "%s moving %s%s %sto %s%s" % (red, yellow, source_dir, red, yellow, target_dir)
-            #shutil.move(source_dir, target_dir)
             move_filez(source_dir, target_dir)
     else:
          source_dir = musicdir
          print "%s moving %s%s %sto %s%s" % (red, yellow, source_dir, red, yellow, target_dir)
-         #shutil.move(source_dir, target_dir)
          move_filez(source_dir, target_dir)
 
 
