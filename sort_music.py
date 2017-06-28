@@ -1,5 +1,9 @@
 #this is designed for full albums in single folders such as 
 #/media/unsorted_ungodly_mess_of_fucking_download/dickrapper-yo_moms_a_bitch-2017-RNS
+#and would move it into a folder /media/target_directory/{{GENRE}}/
+#added feature for large collections ie my hiphop collection, i sort by first letter, 
+#for these items they would be moved into 
+#/media/target_directory/hiphop/{{FIRSTLETTER}}/dickrapper-yo_moms_a_bitch-2017-RNS
 
 import re
 import glob,os.path
