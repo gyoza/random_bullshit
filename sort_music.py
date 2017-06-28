@@ -1,4 +1,5 @@
-#this is designed for full albums in single folders such as dickrapper-yo_moms_a_bitch-2017-RNS
+#this is designed for full albums in single folders such as 
+#/media/unsorted_ungodly_mess_of_fucking_download/dickrapper-yo_moms_a_bitch-2017-RNS
 
 import re
 import glob,os.path
