@@ -45,7 +45,6 @@ class PrettyLogger(object):
             msg = msg.split(" ")
             msgcopy = msg
             for index, item in enumerate(msgcopy):
-                print index, item
                 if "|" in item:
                     color_code = item.split("|")[0].lower()
                     if color_code not in self._color_map:
