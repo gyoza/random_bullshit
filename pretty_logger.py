@@ -5,8 +5,8 @@ from datetime import datetime
 
 class PrettyLogger(object):
     """ -
-        use PrettyLogger(log_level="warn", msg="sup yo H|colorcode|highlight me")
-        use PrettyLogger(log_level="warn", msg="sup yo H|highlight me")
+        use PrettyLogger(log_level="warn", msg="H|sup yo colorcode|highlight colorcode|me colorcode|MULTIPLE TIMES!")
+       
     """
 
     header = 'your header'
